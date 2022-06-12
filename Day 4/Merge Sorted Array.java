@@ -81,7 +81,7 @@ class Solution {
         int k = 0;
         for(int i : nums2){
             nums1[m+k] = i;
-            k++;
+            k++; 
         }
     }
 }
