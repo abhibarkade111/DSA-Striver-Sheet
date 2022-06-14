@@ -24,6 +24,7 @@ public class Solution {
             inv_count+=merge_sort(arr,temp,mid+1,right);
             
             inv_count+=merge(arr,temp,left,mid+1,right);
+            
         }
         return inv_count;
     }
