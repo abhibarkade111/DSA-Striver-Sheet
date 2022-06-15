@@ -35,7 +35,7 @@ public class Solution {
         int i=0;
         int j=0;
         int k=left;
-        long leftArr[] = Arrays.copyOfRange(arr,left,mid+1);
+        long leftArr[] =  Arrays.copyOfRange(arr,left,mid+1);
         long rightArr[] = Arrays.copyOfRange(arr,mid+1,right+1);
         while((i<leftArr.length) && (j<rightArr.length)){
             if(leftArr[i]<=rightArr[j]){
@@ -47,7 +47,7 @@ public class Solution {
             }
         }
         while(i<leftArr.length){
-            arr[k++] = leftArr[i++];
+            arr[k++] = leftArr[i++]; 
         }
         
         while(j<rightArr.length){
