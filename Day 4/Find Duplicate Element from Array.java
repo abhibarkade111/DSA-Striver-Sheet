@@ -11,7 +11,7 @@
 // Space Coplexity is O(n)
 
 // Third Aprroach is Optimal Appraoch Use Slow and Fast Pointer
-// Intially slow assign to the first element 
+// Intially slow and fast assign to the first element 
 // slow will move one step and fast will move the two steps 
 // It's found a cycle then we need to one more time traverse by assign fast to the initaial element again
 // Time complexity is O(n)
