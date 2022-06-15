@@ -1,5 +1,5 @@
 // Rotate Given matrix by 90 degree 
-// Two Approaches : 1) use extra matrix and copy frist as the last column of new matrix and accordingly copy entire matrix
+// Two Approaches : 1) use extra matrix and copy frist row as the last column of new matrix and accordingly copy entire matrix
 //                  2) Frist find transpose of matrix and then reverse the each row of the matrix
 
 class Solution {
