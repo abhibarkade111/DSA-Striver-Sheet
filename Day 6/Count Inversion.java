@@ -10,49 +10,52 @@
 public class Solution {
     public static long getInversions(long arr[], int n) {
         // Write your code here.
-        long temp[]  = new long[n];
-        return merge_sort(arr,temp,0,n-1);
+//         long temp[]  = new long[n];
+        long inv_count=0;
+        inv_count=merge_sort(arr,0,n-1);
+        return inv_count;
         
     }
     
-    public static long merge_sort(long arr[], long temp[],int left, int right){
-        int mid;
+    public static long merge_sort(long arr[],int left, int right){
+        int mid=0;
         long inv_count=0;
         if(right>left){
             mid = (left+right)/2;
-            inv_count+=merge_sort(arr,temp,left,mid);
-            inv_count+=merge_sort(arr,temp,mid+1,right);
+            inv_count+=merge_sort(arr,left,mid);
+            inv_count+=merge_sort(arr,mid+1,right);
             
-            inv_count+=merge(arr,temp,left,mid+1,right);
-            
+            inv_count+=merge(arr,left,mid,right);
         }
         return inv_count;
     }
     
-    public static long merge(long arr[], long temp[],int left, int mid, int right){
+    public static long merge(long arr[],int left, int mid, int right){
         long inv_count=0;
-        int i=left;
-        int j=mid;
+        int i=0;
+        int j=0;
         int k=left;
-        while((i<=mid-1) && (j<=right)){
-            if(arr[i]<=arr[j]){
-                temp[k++] = arr[i++];
+        long leftArr[] = Arrays.copyOfRange(arr,left,mid+1);
+        long rightArr[] = Arrays.copyOfRange(arr,mid+1,right+1);
+        while((i<leftArr.length) && (j<rightArr.length)){
+            if(leftArr[i]<=rightArr[j]){
+                arr[k++] = leftArr[i++];
             }
             else{
-                temp[k++] = arr[j++];
-                inv_count+=(mid-i);
+                arr[k++] = rightArr[j++];
+                inv_count= inv_count+ (mid+1) - (left+i);
             }
         }
-        while(i<=mid-1){
-            temp[k++] = arr[i++];
+        while(i<leftArr.length){
+            arr[k++] = leftArr[i++];
         }
         
-        while(j<=right){
-            temp[k++] = arr[j++];
+        while(j<rightArr.length){
+            arr[k++] = rightArr[j++];
         }
-        for(int l=left;l<temp.length;l++){
-            arr[l] = temp[l];
-        }
+//         for(int l=left;l<temp.length;l++){
+//             arr[l] = temp[l];
+//         }
         return inv_count;
     }
 }
