@@ -1,6 +1,6 @@
 // Merge Overlapping Intervals and return the remaining intervals
 // First we have to sort the given Array in Ascending order
-// Then compare the end of first with the start of second and merge is less
+// Then compare the end of first with the start of second and merge if less
 // https://leetcode.com/problems/merge-intervals/submissions/
 
 class Solution {
