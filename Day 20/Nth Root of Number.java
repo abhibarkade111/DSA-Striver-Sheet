@@ -61,6 +61,6 @@ public class Solution {
                 high = mid;
             }
         }
-        return low;
+        return low; 
     }
 }
