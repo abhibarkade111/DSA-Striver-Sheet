@@ -14,10 +14,10 @@ static int partition(int[] arr, int left, int right) {
     int l = left + 1 ;
     int r = right;
     while (l <= r) {
-        if (arr[l] < pivot && arr[r] > pivot) {
+        if (arr[l] < pivot && arr[r] > pivot)  {
             int temp=arr[l];
             arr[l]=arr[r];
-            arr[r]=temp;
+            arr[r]=temp; 
             l++ ;
             r-- ;
         }
