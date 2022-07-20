@@ -16,7 +16,7 @@
 // And according to find the left1,left2 , right1,right2 and comapare it move the low and high
 // Return the median
 
-// Time Complexity - O(Math.min(N1,N2))
+// Time Complexity - O(log(Math.min(N1,N2)))
 // Space Complexity - O(1)
 
 Code:
