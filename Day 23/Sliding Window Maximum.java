@@ -21,21 +21,26 @@
 // Code:
 
 
-public class Solution {
-  public static int largestRectangle(ArrayList < Integer > heights) {
-    // Write your code here.
-      Stack<Integer> st = new Stack<>();
-      int max=0;
-      for(int i=0;i<=heights.size();i++){
-          while(!st.isEmpty() &&(i==heights.size() || heights.get(st.peek())>=heights.get(i))){
-              int height = heights.get(st.pop());
-              int width = st.isEmpty()?i:i-st.peek()-1;
-              max =Math.max(max, height*width);
-          }
-          st.push(i);
-      }
-      return max;
-  }
+class Solution {
+    public int[] maxSlidingWindow(int[] nums, int k) {
+        int ans[] = new int[nums.length-k+1];
+        Deque<Integer> dq = new ArrayDeque<>();
+        int ri=0;
+        
+        for(int i=0;i<nums.length;i++){
+            if(!dq.isEmpty() && dq.peek()==i-k){
+                dq.poll();
+            }
+            while(!dq.isEmpty()  && nums[dq.peekLast()]<=nums[i]){
+                dq.pollLast();
+            }
+            dq.offer(i);
+            if(i>=k-1){
+                ans[ri++] = nums[dq.peek()];
+            }
+        }
+        return ans;
+    }
 }
 
 
