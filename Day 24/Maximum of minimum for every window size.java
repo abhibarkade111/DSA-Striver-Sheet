@@ -20,6 +20,7 @@ public class Solution {
         int ps[] = new int[n];
         int ns[] = new int[n];
         Arrays.fill(ans, Integer.MIN_VALUE);
+        
         Stack<Integer> st = new Stack<>();
         for(int i=0;i<n;i++){
             while(!st.isEmpty() && a[st.peek()]>=a[i]){
