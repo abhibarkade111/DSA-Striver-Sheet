@@ -76,3 +76,21 @@ class Solution {
         return ans.trim();
     }
 }
+
+// Code Studio Code
+
+public class Solution 
+{
+	public static String reverseString(String str) 
+	{
+		//Write your code here
+        StringBuilder sb = new StringBuilder();
+        str.trim();
+        String s[] = str.split(" ");
+        for(int i=s.length-1;i>=0;i--){
+            sb.append(s[i].trim()+" ");
+        }
+        return sb.toString();
+	}
+}
+
