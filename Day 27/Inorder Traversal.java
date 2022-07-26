@@ -41,7 +41,7 @@ class Solution {
     }
 }
 
-// Approach 1: Iterative
+// Approach 2: Iterative
 // Inorder-> Left Root Right
 
 // Use stack 
