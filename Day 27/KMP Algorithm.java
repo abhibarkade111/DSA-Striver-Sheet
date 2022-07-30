@@ -42,7 +42,7 @@ public class Solution {
                     i++;
                 }
                 else{
-                    j = lps[j-1];
+                    j =lps[j-1];
                 }
             }
         }
