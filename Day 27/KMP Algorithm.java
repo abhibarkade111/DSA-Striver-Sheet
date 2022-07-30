@@ -37,9 +37,9 @@ public class Solution {
                 return true;
 //                 j = lps[j-1];
             }a
-            else if(i<n && p.charAt(j)!=s.charAt(i)){
+            else if(i<n && p.charAt(j) !=s.charAt(i)){
                 if(j==0){
-                    i++;
+                    i++; 
                 }
                 else{
                     j =lps[j-1];
