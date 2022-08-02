@@ -5,7 +5,7 @@
 
 // Approach 1: Brute Force 
 // Check for each length of pattern in substring 
-// if found then return the truw else return false
+// if found then return the true else return false
 
 // Time Complexity - O(m*n)
 // Space Complexity - O(1)

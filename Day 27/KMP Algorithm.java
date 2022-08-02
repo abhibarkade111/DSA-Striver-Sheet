@@ -36,7 +36,7 @@ public class Solution {
             if(j==m){
                 return true;
 //                 j = lps[j-1];
-            }a
+            }
             else if(i<n && p.charAt(j) != s.charAt(i)){
                 if(j==0){
                     i++; 
