@@ -2,7 +2,7 @@
 // Input : Given Binary tree
 // Output : return nodes which are visible from bottom
 
-// Approach 1: Using LevelOrder traversal and add all the node in map by line i.e which line the node is present i.e suppose new node on bottom side on straight line is found then wwe can add it to the map and it would will be overwritten
+// Approach 1: Using LevelOrder traversal and add all the node in map by line i.e which line the node is present i.e suppose new node on bottom side on straight line is found then we can add it to the map and it would will be overwritten
 // at the end traverse the map and add all the values of map to the ans 
 // Use TreeMap because keys are sorted in the treeMap
 
