@@ -22,7 +22,7 @@ public class Solution {
         int lh = findD(root.left, max);
         int rh  = findD(root.right, max);
         max[0] = Math.max(max[0], lh+rh);
-        return 1+Math.max(lh,rh);
+        return 1+Math.max(lh, rh);
     }
 	public static int diameterOfBinaryTree(TreeNode<Integer> root) {
 		// Write your code here.
