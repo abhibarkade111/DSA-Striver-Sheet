@@ -19,7 +19,7 @@
 // go according to the left and right node and return ans
 
 // Time Complexity - O(h)
-// Space Complexity - O(1)
+// Space Complexity -  O(1)
 
 
 // Code
