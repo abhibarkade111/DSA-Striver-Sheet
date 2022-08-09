@@ -24,8 +24,8 @@ public class Solution {
                 }
             }
             else{
-                hm.put(arr.get(j), hm.getOrDefault(arr.get(j),0)+1);
-                hm.put(arr.get(i), hm.getOrDefault(arr.get(i),0)-1);
+                hm.put(arr.get(j),  hm.getOrDefault(arr.get(j),0)+1);
+                hm.put(arr.get(i),  hm.getOrDefault(arr.get(i),0)-1);
                 if(hm.get(arr.get(i))==0) hm.remove(arr.get(i));
                 ans.add(hm.size());
                 i++;
