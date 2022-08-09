@@ -37,7 +37,7 @@ public class Kthlargest {
 
     int getKthLargest() {
         // Write your code here.
-        if(!pq.isEmpty()) return pq.peek();
+        if(!pq.isEmpty())  return pq.peek();
         return -1;
     }
 }
