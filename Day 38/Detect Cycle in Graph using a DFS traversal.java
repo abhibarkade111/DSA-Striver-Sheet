@@ -2,8 +2,7 @@
 
 // Approach 1:
 
-// Using Visited and dfsVisited Array we can detect the cycle is present int graph or not
-// using recusrsion and backtracking we can travrse the graph using DFS Travrsal
+// Do the DFS Traveral and pass the parent node and node and check the node is already visited or not if already visited and node != parent then cycle is detected 
 
 // Code:
 
