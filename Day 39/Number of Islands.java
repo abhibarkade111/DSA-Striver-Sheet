@@ -55,3 +55,57 @@ class Solution {
         return cnt;
     }
 }
+
+// Code on codeStudio 
+// Eight directionally
+
+// Code:
+
+
+class Pair{
+    int row;
+    int col;
+    Pair(int row, int col){
+        this.row = row;
+        this.col = col;
+    }
+}
+public class Solution 
+{
+    public static void bfs(int row, int col, int mat[][], int vis[][]){
+        vis[row][col]=1;
+        Queue<Pair> q = new LinkedList<>();
+        q.offer(new Pair(row,col));
+        
+        while(!q.isEmpty()){
+            Pair p = q.poll();
+            int r= p.row;
+            int c= p.col;
+            for(int delrow=-1; delrow<=1;delrow++){
+                 for(int delcol=-1;delcol<=1;delcol++){
+                      int rr = delrow+r;
+                      int cc = delcol+c;
+                     if(rr>=0 && cc>=0 && rr<mat.length && cc<mat[0].length && vis[rr][cc]==0 && mat[rr][cc]==1){
+                    vis[rr][cc]=1;
+                    q.offer(new Pair(rr,cc));
+                }
+                 }
+             }
+        }
+    }
+    public static int getTotalIslands(int[][] mat) 
+	{
+        //Your code goes here
+        int cnt=0;
+        int vis[][] = new int[mat.length][mat[0].length];
+        for(int i=0;i<mat.length;i++){
+            for(int j=0;j<mat[0].length;j++){
+                if(mat[i][j]==1 && vis[i][j]==0){
+                    cnt+=1;
+                    bfs(i,j,mat,vis);
+                }
+            }
+        }
+        return cnt;
+    }
+}
