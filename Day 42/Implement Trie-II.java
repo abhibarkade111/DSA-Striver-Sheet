@@ -1,7 +1,7 @@
 // Implement Trie-II 
 // In this Question we implement some more function with the trie data Structure
 
-// like- INSERT, COUNTSTARTWITH, COUNTENDSWITH
+// like- INSERT, COUNTSTARTWITH, COUNTEQUALTO
 
 // As in the previous question we take a flag in this question we maintain the starts with and endswith variable and according to the function we incremeent and decrement it
 
