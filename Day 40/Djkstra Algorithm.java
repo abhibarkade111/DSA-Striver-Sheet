@@ -2,7 +2,7 @@
 // Djkstra Algorithm is most popular algorithm to find the shortest path from source to all nodes
 
 // Apprioach 1: Using PriorityQueue Data structure we can find the minimum distance from the source 
-// priorityqueue is usful because it will always give minimum element on the top
+// priorityqueue is useful because it will always give minimum element on the top
 
 // Time Complexity - O((N+E)logN)
 // Space Complexity - O(N)+O(N)
