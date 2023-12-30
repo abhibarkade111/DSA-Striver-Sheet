@@ -1,3 +1,8 @@
+// Pascle Traingle
+// Input : Given N
+// Output : need to return a pascle taringle of length N
+// It is one of the most asked interview question 
+
 public class Solution {
 	public static ArrayList<ArrayList<Long>> printPascal(int n) {
                  // Write your code here.
