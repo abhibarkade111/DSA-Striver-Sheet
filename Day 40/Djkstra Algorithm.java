@@ -3,11 +3,14 @@
 
 // Apprioach 1: Using PriorityQueue Data structure we can find the minimum distance from the source 
 // priorityqueue is useful because it will always give minimum element on the top
+// Djkstra Algorithm is one of the important algorithm
 
 // Time Complexity - O((N+E)logN)
 // Space Complexity - O(N)+O(N)
 
 // Code:
+
+import java.util.ArrayList;
 
 class Node implements Comparator<Node>{
     int v;
@@ -72,6 +75,25 @@ class Solution
         }
         
         return findDjk(S,adjN,V);
+    }
+
+    public static void main(String[] args) {
+        int V=4;
+        ArrayList<ArrayList<Integer>> graph  = new ArrayList<>();
+        for(int i=0;i<4;i++){
+            graph.add(new ArrayList<>());
+        }
+        graph.get(0).add(1);
+        graph.get(0).add(2);
+        graph.get(0).add(3);
+        graph.get(1).add(2);
+        graph.get(1).add(3);
+        graph.get(2).add(0);
+        graph.get(2).add(3);
+        graph.get(3).add(1);
+        graph.get(2).add(0);
+        int ans[] = dijkstra(V,graph,0);
+        for(int i : ans) System.out.println(i);
     }
 }
 
