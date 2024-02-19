@@ -3,7 +3,7 @@
 // Output: 4
 
 // Approach 1: BFS
-// Use Queue to store all initial rotten elements in queue and pop each element and check for 4 direction any fresh oranges if present then convert it into rotten and add it into int the queue and count all the elements entered in queue 
+// Use Queue to store all initial rotten elements in queue and pop each element and check for 4 tr any fresh oranges if present then convert it into rotten and add it into int the queue and count all the elements entered in queue 
 // Intially count the all oranges int the grid
 
 // if total oaranges and inserted ornges are equal then return the countMin steps i. how many times we use BFS
