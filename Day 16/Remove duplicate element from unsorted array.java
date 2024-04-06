@@ -1,4 +1,4 @@
-// Remove duplicate element from unsorted array
+// Remove duplicate element from sorted array
 // 1,1,2,2,2,3,3 => 1,2,3,_,_,_,_
 
 // Approach 1: Use HashSet

@@ -73,8 +73,6 @@ class BSTI{
             else root = root.left;
         }
     }
-    
-    
 }
 class Solution {
     public boolean findTarget(TreeNode root, int k) {

@@ -8,7 +8,7 @@
 // Approach 1: Using Stack
 // Store the price and current span in the stack
 // intialize the count=1
-// while the price int the stack is less than equal to the current price then increase the counter by pppoing the element and add span of the ppoped element from the stack
+// while the price in the stack is less than equal to the current price then increase the counter by pppoing the element and add span of the ppoped element from the stack
 // return count
 
 // Time Complexity: O(2n)

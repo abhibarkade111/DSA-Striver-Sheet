@@ -29,8 +29,8 @@ static int partition(int[] arr, int left, int right) {
         }
     }
     int temp2=arr[left];
-            arr[left]=arr[r];
-            arr[r]=temp2;
+    arr[left]=arr[r];
+    arr[r]=temp2;
     return r;
 }
 

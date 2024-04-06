@@ -5,7 +5,7 @@
 
 // Approach : Level Order Traversal
 // Indexing the node while travrsing 
-// insted of indexing serially we will index it by substracting min of that level from each level it will reduce the overflow aswell it will help to pass corner test cases
+// insted of indexing serially we will index it by substracting min of that level from each level it will reduce the overflow as well it will help to pass corner test cases
 
 
 // Time Complexity - O(n)

@@ -1,4 +1,4 @@
-MST using Prims Algorithm
+// MST using Prims Algorithm
 
 // Approach :
 
